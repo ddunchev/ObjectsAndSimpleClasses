@@ -10,16 +10,26 @@ namespace Excersices
     {
         static void Main(string[] args)
         {
-            Person myPerson = new Person();
+            Person myPerson = new Person(24, "Pesho");
+
+            Console.WriteLine(myPerson.getName());
         }
 
         class Person
         {
             private int age = 44;
 
-            public Person()
+            private string name = "Dancho";
+
+            public Person(int ag, string nm)
             {
-                Console.WriteLine("Hello Dancho");
+                this.age = ag;
+                this.name = nm;
+            }
+
+            public string getName()
+            {
+                return this.name;
             }
         }
     }
