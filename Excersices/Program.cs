@@ -10,6 +10,17 @@ namespace Excersices
     {
         static void Main(string[] args)
         {
+            Person myPerson = new Person();
+        }
+
+        class Person
+        {
+            private int age = 44;
+
+            public Person()
+            {
+                Console.WriteLine("Hello Dancho");
+            }
         }
     }
 }
